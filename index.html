@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gel Nagellack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Gel Nagellack</h1>
+    <nav>
+      <ul>
+        <li><a href="#om">Om Produkterna</a></li>
+        <li><a href="#farger">Färger</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Glansigt. Hållbart. Snyggt.</h2>
+    <p>Upptäck vårt sortiment av gel nagellack i trendiga färger!</p>
+    <button onclick="scrollToColors()">Se färger</button>
+  </section>
+
+  <section id="om">
+    <h2>Om Produkterna</h2>
+    <p>Våra gel nagellack är fria från skadliga kemikalier och håller upp till tre veckor utan att flagna. Perfekt för både salong och hemmabruk.</p>
+  </section>
+
+  <section id="farger">
+    <h2>Välj din favoritfärg</h2>
+    <div class="color-palette">
+      <div class="color" style="background-color: #e91e63;" onclick="chooseColor('#e91e63')"></div>
+      <div class="color" style="background-color: #9c27b0;" onclick="chooseColor('#9c27b0')"></div>
+      <div class="color" style="background-color: #03a9f4;" onclick="chooseColor('#03a9f4')"></div>
+      <div class="color" style="background-color: #4caf50;" onclick="chooseColor('#4caf50')"></div>
+      <div class="color" style="background-color: #ff9800;" onclick="chooseColor('#ff9800')"></div>
+    </div>
+    <p id="chosen-color">Ingen färg vald ännu.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakta oss</h2>
+    <form>
+      <input type="text" placeholder="Ditt namn" required />
+      <input type="email" placeholder="Din e-post" required />
+      <textarea placeholder="Meddelande" required></textarea>
+      <button type="submit">Skicka</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GelNagellack.se</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
